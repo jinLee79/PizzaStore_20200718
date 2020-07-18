@@ -35,6 +35,13 @@ class PizzaStoreListFragment : Fragment() {
 
         mAdapter = PizzaStoreListAdapter(context!!, R.layout.pizza_store_list_item, mPizzaStoreList)
         pizzaStoreListView.adapter = mAdapter
+
+        pi
+
+
     }
+
+
+
 
 }

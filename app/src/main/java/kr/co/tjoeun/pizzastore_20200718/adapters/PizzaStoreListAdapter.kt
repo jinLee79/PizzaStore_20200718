@@ -6,6 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
+import com.bumptech.glide.Glide
 import kr.co.tjoeun.pizzastore_20200718.R
 import kr.co.tjoeun.pizzastore_20200718.datas.PizzaStore
 import java.util.concurrent.RecursiveTask
@@ -22,7 +25,20 @@ class PizzaStoreListAdapter(val mContext:Context, val resId:Int, val mList:List<
 
         val row = tempRow!!
 
+        val logoImg = row.findViewById<ImageView>(R.id.pizzaStoreLogoImg)
+        val nameTxt = row.findViewById<TextView>(R.id.pizzaStoreNameTxt)
+
+
+        val data = mList[position]
+        Glide.with(mContext).load(data.logoUrl).into(logoImg)
+
+        nameTxt.text = data.name
+
+
+
         return row
+
+
     }
 
 
