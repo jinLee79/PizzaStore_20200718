@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kr.co.tjoeun.pizzastore_20200718.R
-import java.util.zip.Inflater
 
 class MyProfileFragment : Fragment() {
 
