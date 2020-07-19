@@ -9,11 +9,7 @@ import kr.co.tjoeun.pizzastore_20200718.R
 
 class EditNickNameActivity : BaseActivity() {
     override fun setupEvents() {
-        changeNickNameBtn.setOnClickListener {
-            val myIntent = Intent(mContext, R.layout.activity_edit_nick_name)
-            startActivity(myIntent)
 
-        }
     }
 
     override fun setValues() {
